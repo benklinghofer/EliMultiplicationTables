@@ -1,0 +1,38 @@
+body {
+    text-align: left;
+    padding: 0 100px 0 100px;
+    background-image: url("MatrixGif.gif") ;
+    color: mintcream;
+}
+
+.Generator {
+    background-color: mediumspringgreen;
+    border: 10px outset black;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    
+}
+
+.Generator input {
+    font-size: x-large;
+}
+
+.Table {
+    background-color: mediumspringgreen;
+    border: 10px outset black;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    font-size: x-large;
+    display: flex;
+}
+
+.Table div {
+    /* padding: 200px; */
+    flex: 0 50%;
+    width: 100%;
+    
+    /* display: block; */
+}
+
