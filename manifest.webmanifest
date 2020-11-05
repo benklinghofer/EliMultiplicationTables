@@ -1,0 +1,21 @@
+{
+    "short_name": "Times Tables",
+    "name": "Times Tables",
+    "description": "Choose your own times tables",
+    "icons": [
+        {
+            "src": "/images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#00fa9a",
+    "display": "fullscreen",
+    "theme_color": "#00fa9a"
+}
