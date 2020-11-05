@@ -2,17 +2,19 @@ const box = document.getElementById("box");
 const leftDiv = document.getElementById("left");
 const rightDiv = document.getElementById("right");
 console.log(box);
+const format = new Intl.NumberFormat().format;
 
 function addStatement(multiplier, input) {
     const answer = input * multiplier;
     const div = document.createElement("div");
-    div.innerHTML = `${input} x ${multiplier} = ${answer}`;
+    div.innerHTML = `${format(input)} x ${multiplier} = ${format(answer)}`;
     if (multiplier <= 10) {
         leftDiv.appendChild(div);
     } else {
         rightDiv.appendChild(div);
     }
 }
+
 
 
 function applyNumber() {
