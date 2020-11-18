@@ -3,6 +3,8 @@ const rightDiv = document.getElementById("right");
 const currentNumberElement = document.getElementById("currentNumber");
 const format = new Intl.NumberFormat().format;
 
+applyNumber();
+
 function typeNumber(inputNumber) {
     currentNumberElement.textContent = currentNumberElement.textContent + inputNumber;
     applyNumber();
