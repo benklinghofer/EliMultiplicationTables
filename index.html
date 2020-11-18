@@ -12,8 +12,7 @@
 
     <link rel="apple-touch-icon" href="/images/512.png">
 </head>
-…
-</head>
+
 
 <body>
     <h1>Times Table Generator</h1>
@@ -23,8 +22,19 @@
 
 
     <div class="Generator">
-        <h2>Type your number here</h2>
-        <input type="number" id="box" onchange="applyNumber();">
+        <h2 id="currentNumber">1</h2>
+        <button onclick="typeNumber(1);">1</button>
+        <button onclick="typeNumber(2);">2</button>
+        <button onclick="typeNumber(3);">3</button>
+        <button onclick="typeNumber(4);">4</button>
+        <button onclick="typeNumber(5);">5</button>
+        <button onclick="typeNumber(6);">6</button>
+        <button onclick="typeNumber(7);">7</button>
+        <button onclick="typeNumber(8);">8</button>
+        <button onclick="typeNumber(9);">9</button>
+        <button onclick="typeNumber(0);">0</button>
+        <button onclick="deleteNumber();">Delete</button>
+
 
     </div>
 

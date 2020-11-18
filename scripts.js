@@ -1,8 +1,17 @@
-const box = document.getElementById("box");
 const leftDiv = document.getElementById("left");
 const rightDiv = document.getElementById("right");
-console.log(box);
+const currentNumberElement = document.getElementById("currentNumber");
 const format = new Intl.NumberFormat().format;
+
+function typeNumber(inputNumber) {
+    currentNumberElement.textContent = currentNumberElement.textContent + inputNumber;
+    applyNumber();
+}
+
+function deleteNumber() {
+    currentNumberElement.textContent = currentNumberElement.textContent.substring(0, currentNumberElement.textContent.length - 1)
+    applyNumber();
+}
 
 function addStatement(multiplier, input) {
     const answer = input * multiplier;
@@ -20,8 +29,8 @@ function addStatement(multiplier, input) {
 function applyNumber() {
     leftDiv.textContent = " ";
     rightDiv.textContent = "";
-    console.log(box.value);
-    let input = box.value;
+    console.log(currentNumberElement.textContent);
+    let input = currentNumberElement.textContent;
     if (!input) {
         input = 0
     }
