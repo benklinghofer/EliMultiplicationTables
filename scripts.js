@@ -1,6 +1,7 @@
 const leftDiv = document.getElementById("left");
 const rightDiv = document.getElementById("right");
 const currentNumberElement = document.getElementById("currentNumber");
+alert(Intl);
 const format = new Intl.NumberFormat().format;
 
 applyNumber();
